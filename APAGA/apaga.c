@@ -21,12 +21,15 @@ main () {
 		redo:
 		for(i = 0;i <= (N - 1);i++) {
 			if (nums[i] != -1) {
+				
+				// Pega o próximo número para comparar
 				for(j = (i+1);j <= (N - 1);j++) {
 					if(nums[j] != -1) {
 						next = nums[j];
 						break;
 					}
 				}
+				// Verifica se o próximo número é maior que o atual
 				if(next > nums[i]) {
 					nums[i] = -1;
 					D--;

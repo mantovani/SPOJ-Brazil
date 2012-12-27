@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define BUFFSIZE 100000
+#define BUFFSIZE 100001 
 
 main () {
 	int N,D;
@@ -42,7 +42,7 @@ main () {
 			}
 		}
 		exgohorse:
-		for(i = 0;i <= (N - 1);i++) {
+		for(i = 0;i <= (N - 1 - D);i++) {
 			if(nums[i] != -1) {
 				printf("%d",nums[i]);
 			}
